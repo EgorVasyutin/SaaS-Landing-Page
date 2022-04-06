@@ -18,3 +18,7 @@
     font-family: manrope-bold;
     src: url("../fonts/Manrope/Manrope-Bold.ttf");
 }
+@font-face {
+    font-family: poppins-semibold;
+    src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
