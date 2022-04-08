@@ -105,3 +105,12 @@
     cursor: pointer;
 
 }
+
+.bg-vector{
+    position: absolute;
+    right: -100px;
+    top: 0px;
+    z-index: -1;
+    width: 1200px;
+    height: 810px;
+}
