@@ -1,0 +1,174 @@
+.CTA {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: #3734A9;
+    gap: 235px;
+    height: 450px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.CTA__container {
+}
+
+.CTA__text--why {
+    font-family: manrope-bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.CTA__text--bold {
+    font-family: manrope-Extra-bold;
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.CTA__text--medium {
+    font-family: manrope-semibold;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+    margin-bottom: 75px;
+}
+
+.register__input-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+.input-password-2,
+.input-email-2 {
+    width: 356px;
+    height: 60px;
+    border-radius: 5px;
+    background: #F2F3F4;
+    border: 1px solid #DFE4F1;
+    padding-left: 21px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: manrope-medium;
+    opacity: 0.2;
+}
+
+.button-submit-2{
+    margin-bottom: 75px;
+    height: 60px;
+    background: #FF7F5C;
+    border-radius: 5px;
+    font-family: manrope-bold;
+    font-size: 16px;
+    line-height: 30px;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.Polygon_8{
+    position: absolute;
+    top: -109px;
+    right: 0px;
+}
+
+.Polygon_9{
+    position: absolute;
+    top: 235px;
+    left: 275px;
+}
+
+.Polygon_10{
+    position: absolute;
+    top: 12px;
+    left: 900px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 123px;
+
+}
+
+.AR {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.footer__text--bold {
+    font-family: manrope-bold;
+    font-size: 21px;
+    line-height: 28px;
+    color: #1B1C31;
+    padding-bottom: 24px;
+}
+
+.AR__text {
+    font-family: manrope-medium;
+    font-size: 16px;
+    line-height: 28px;
+    color: #757095;
+    padding-bottom: 31px;
+}
+
+.AR__icon {
+    display: flex;
+    gap: 16px;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    margin-right: 137px;
+}
+
+.footer__text--medium {
+    font-family: manrope-medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: #181433;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    margin-right: 87px;
+}
+
+.join {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.link__email {
+    padding-bottom: 21px;
+}
+
+.join__email {
+    width: 270px;
+    height: 52px;
+    background: #F9F9F9;
+    font-family: manrope-medium;
+    font-size: 16px;
+    line-height: 26px;
+    color: #181433;
+}
+
+.join__submit {
+    width: 120px;
+    height: 52px;
+    background-color: #3734A9;
+    font-family: manrope-medium;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
