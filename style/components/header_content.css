@@ -3,6 +3,7 @@
     font-size: 17px;
     line-height: 30px;
     color: #3734A9;
+   margin-left: 11px;
 }
 
 .register__input{
@@ -10,6 +11,11 @@
     flex-direction: column;
     gap: 25px;
 }
+
+.header__content{
+    position: relative;
+}
+
 
 .register__input-text{
     font-family: manrope-bold;
@@ -29,6 +35,7 @@
     font-size: 20px;
     line-height: 30px;
     font-family: manrope-medium;
+    color: #64607D;
 }
 
 .button-submit{
@@ -71,11 +78,12 @@
 }
 
 .content_2__text--bold{
-    font-family: manrope-Extra-bold;
+    font-family: manrope-bold;
     font-size: 42px;
     line-height: 60px;
     color: black;
     padding-bottom: 13px;
+    letter-spacing: -0.03em;
 }
 
 .content_2__text--medium{
@@ -96,4 +104,8 @@
     text-align: center;
     color: white;
     cursor: pointer;
+    font-family: manrope-medium;
 }
+
+
+

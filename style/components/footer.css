@@ -39,7 +39,7 @@
 .register__input-2 {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 24px;
 
 }
 .input-password-2,
@@ -47,13 +47,28 @@
     width: 356px;
     height: 60px;
     border-radius: 5px;
-    background: #F2F3F4;
+    background-color: #F2F3F4;
     border: 1px solid #DFE4F1;
+    opacity: 0.2;
     padding-left: 21px;
+}
+
+.input-email-2::placeholder{
+    font-family: manrope-medium;
+    letter-spacing: -0.02em;
+    color: #BBB5E0;
     font-size: 20px;
     line-height: 30px;
+    opacity: 0.4;
+}
+
+.input-password-2::placeholder{
     font-family: manrope-medium;
-    opacity: 0.2;
+    letter-spacing: -0.02em;
+    color: #BBB5E0;
+    font-size: 20px;
+    line-height: 30px;
+    opacity: 0.4;
 }
 
 .button-submit-2{
@@ -65,7 +80,6 @@
     font-size: 16px;
     line-height: 30px;
     color: white;
-    margin-top: 15px;
     cursor: pointer;
 }
 
@@ -151,16 +165,19 @@
 
 .link__email {
     padding-bottom: 21px;
+    margin-right: 0px;
+    width: 389px;
 }
 
 .join__email {
-    width: 270px;
+    width: 250px;
     height: 52px;
     background: #F9F9F9;
     font-family: manrope-medium;
     font-size: 16px;
     line-height: 26px;
     color: #181433;
+    padding-left: 15px;
 }
 
 .join__submit {
@@ -171,4 +188,36 @@
     font-size: 16px;
     line-height: 26px;
     color: #FFFFFF;
+}
+
+.AR__text-2{
+    color: #181433;
+    font-family: manrope-medium;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+}
+
+.copyrights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 130px;
+    margin-top: 60px;
+}
+
+.line-3 {
+    width: 1140px;
+    background-color: #E5E5EA;
+    height: 2px;
+}
+
+.copyrights__text {
+    padding-top: 40px;
+    color: #181433;
+    font-family: manrope-medium;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
 }

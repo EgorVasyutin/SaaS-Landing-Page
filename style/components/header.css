@@ -14,7 +14,7 @@
 }
 .logo__text{
     font-family: staatliches;
-    font-size: 23px;
+    font-size: 20px;
     line-height: 24px;
 }
 .menu{
@@ -22,14 +22,40 @@
     justify-content: space-between;
     gap: 40px;
 }
+
+.header__select{
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    width: 100%;
+}
+
+
+.arrow_header{
+    margin-left: 0px;
+}
+
+.nav__select{
+    margin-right: 12px;
+}
+
+.nav__select2{
+    width: 65%;
+}
+
+.nav__select1{
+    width: 55%;
+}
+
 .nav__select,
 .nav__button {
     font-family: manrope-semibold;
-    background: none;
     border: none;
     font-size: 14px;
     line-height: 19px;
     cursor: pointer;
+    background: none;
+    appearance: none;
 }
 .container__button{
     display: flex;
@@ -52,6 +78,7 @@
     line-height: 19px;
     color: white;
     cursor: pointer;
+    font-family: manrope-semibold;
 }
 
 .header__content{
@@ -63,11 +90,12 @@
     align-items: center;
 }
 
-.register__text--big{
+.register__text--big h1{
     font-family: manrope-Extra-bold;
-    font-size: 45px;
-    line-height: 120px;
+    font-size: 60px;
+    line-height: 74px;
     color: #000000;
+    letter-spacing: -0.03em;
 }
 
 .register__text--small{
@@ -82,7 +110,7 @@
     padding-top: 47px;
     display: flex;
     gap: 50px;
-
+    align-items: center;
 }
 
 .button__our-process{
@@ -97,20 +125,22 @@
     cursor: pointer;
 }
 
-.button-play{
+.elipse-button-play{
     width: 60px;
     height: 60px;
     border-radius: 47px;
     background-color: #22D497;
     cursor: pointer;
-
+    position: relative;
 }
 
-.bg-vector{
+.button-play{
     position: absolute;
-    right: -100px;
-    top: 0px;
-    z-index: -1;
-    width: 1200px;
-    height: 810px;
+    top: 35%;
+    left: 40%;
+}
+
+.input-play{
+    display: flex;
+    align-items: center;
 }

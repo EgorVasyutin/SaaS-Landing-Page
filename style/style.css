@@ -1,4 +1,4 @@
-@import "import.css";
+@import "fonts.css";
 @import "start_style.css";
 @import "components/header.css";
 @import "components/header_content.css";
@@ -8,7 +8,29 @@
 
 .body{
     max-width: 1440px;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
+body{
+    background-image: url("../../img/Vector 1577.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
 
+.img-sexangle_2 {
+    position: absolute;
+    top: 650px;
+    left: 0px;
+}
+
+.img-sexangle_1{
+    position: absolute;
+    top: 80px;
+    left: 0px;
+}
+
+.img-sexangle_3{
+    position: absolute;
+    top: 2710px;
+    right: 0px;
+}

@@ -15,17 +15,17 @@
 }
 
 .point-img {
-    width: 42px;
-    height: 42px;
-    padding: 0 0 37px 11px;
+    width: 64px;
+    height: 64px;
+    padding: 0 0 37px 0px;
 }
 
 .point-1 {
     width: 85px;
     height: 204px;
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 25px;
+    top: -45px;
 }
 
 .point__text {
@@ -34,6 +34,7 @@
     line-height: 24px;
     color: #757095;
     margin-top: 5px;
+    width: 280px;
 }
 
 .point-h3{
@@ -47,15 +48,15 @@
     height: 204px;
     position: absolute;
     right: 0px;
-    top: 0px;
+    top: -40px;
 }
 
 .point-3{
     width: 112px;
     height: 204px;
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 15px;
+    top: -37px;
 }
 
 .cta-box{
