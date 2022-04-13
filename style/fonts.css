@@ -1,28 +1,30 @@
 @font-face {
-    font-family: staatliches;
-    src: url("../fonts/Staatliches/Staatliches-Regular.ttf")
+  font-family: staatliches;
+  src: url("../fonts/Staatliches/Staatliches-Regular.ttf");
 }
 @font-face {
-    font-family: manrope-semibold;
-    src: url("../fonts/Manrope/Manrope-SemiBold.ttf");
+  font-family: manrope-semibold;
+  src: url("../fonts/Manrope/Manrope-SemiBold.ttf");
 }
 @font-face {
-    font-family: manrope-Extra-bold;
-    src: url("../fonts/Manrope/Manrope-ExtraBold.ttf");
+  font-family: manrope-Extra-bold;
+  src: url("../fonts/Manrope/Manrope-ExtraBold.ttf");
 }
 @font-face {
-    font-family: manrope-medium;
-    src: url("../fonts/Manrope/Manrope-Medium.ttf");
+  font-family: manrope-medium;
+  src: url("../fonts/Manrope/Manrope-Medium.ttf");
 }
 @font-face {
-    font-family: manrope-bold;
-    src: url("../fonts/Manrope/Manrope-Bold.ttf");
+  font-family: manrope-bold;
+  src: url("../fonts/Manrope/Manrope-Bold.ttf");
 }
 @font-face {
-    font-family: poppins-semibold;
-    src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+  font-family: poppins-semibold;
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
 }
 @font-face {
-    font-family: poppins-bold;
-    src: url("../fonts/Poppins/Poppins-Bold.ttf");
+  font-family: poppins-bold;
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
 }
+
+/*# sourceMappingURL=fonts.css.map */

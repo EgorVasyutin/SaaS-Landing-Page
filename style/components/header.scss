@@ -1,13 +1,34 @@
 .header {
   height: 120px;
-}
 
+  &__select {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    width: 100%;
+  }
+}
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0px 120px;
   height: 100%;
+
+  &__logo {
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+  }
+  &__register {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .logo__text {
@@ -15,52 +36,37 @@
   font-size: 20px;
   line-height: 24px;
 }
-
-.menu {
+.nav {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-}
 
-.header__select {
-  display: flex;
-  align-items: center;
-  margin-right: 0px;
-  width: 100%;
+  &__select {
+    margin-right: 12px;
+  }
+
+  &__select2 {
+    width: 65%;
+  }
+
+  &__select1 {
+    width: 55%;
+  }
+
+  &__select,
+  &__button {
+    font-family: manrope-semibold;
+    border: none;
+    font-size: 14px;
+    line-height: 19px;
+    cursor: pointer;
+    background: none;
+    appearance: none;
+  }
 }
 
 .arrow_header {
   margin-left: 0px;
-}
-
-.nav__select {
-  margin-right: 12px;
-}
-
-.nav__select2 {
-  width: 65%;
-}
-
-.nav__select1 {
-  width: 55%;
-}
-
-.nav__select,
-.nav__button {
-  font-family: manrope-semibold;
-  border: none;
-  font-size: 14px;
-  line-height: 19px;
-  cursor: pointer;
-  background: none;
-  appearance: none;
-}
-
-.container__button {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-  align-items: center;
 }
 
 .button__text--semibold {
@@ -68,11 +74,10 @@
   font-size: 14px;
   line-height: 19px;
 }
-
 .button__start-free {
   width: 137px;
   height: 52px;
-  background-color: #4F46BA;
+  background-color: #4f46ba;
   border-radius: 10px;
   border: none;
   font-size: 14px;
@@ -84,12 +89,6 @@
 
 .header__content {
   padding-top: 130px;
-}
-
-.container__register {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .register__text--big h1 {
@@ -104,7 +103,7 @@
   font-family: manrope-medium;
   font-size: 20px;
   line-height: 30px;
-  color: #64607D;
+  color: #64607d;
   padding-top: 20px;
 }
 
@@ -122,7 +121,7 @@
   font-size: 16px;
   line-height: 30px;
   border-radius: 47px;
-  background-color: #3734A9;
+  background-color: #3734a9;
   color: white;
   cursor: pointer;
 }
@@ -131,7 +130,7 @@
   width: 60px;
   height: 60px;
   border-radius: 47px;
-  background-color: #22D497;
+  background-color: #22d497;
   cursor: pointer;
   position: relative;
 }
@@ -146,5 +145,3 @@
   display: flex;
   align-items: center;
 }
-
-/*# sourceMappingURL=header.css.map */
