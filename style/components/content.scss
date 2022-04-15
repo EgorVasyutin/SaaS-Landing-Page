@@ -354,29 +354,28 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  &-container--blue {
+    font-family: staatliches;
+    font-size: 18px;
+    line-height: 30px;
+    color: #3734a9;
+    padding-bottom: 15px;
+  }
 
-    &--blue {
-      font-family: staatliches;
-      font-size: 18px;
-      line-height: 30px;
-      color: #3734a9;
-      padding-bottom: 15px;
-    }
+  &-container--bold {
+    font-family: manrope-Extra-bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    padding-bottom: 40px;
+  }
 
-    &--bold {
-      font-family: manrope-Extra-bold;
-      font-size: 40px;
-      line-height: 48px;
-      color: #000000;
-      padding-bottom: 40px;
-    }
-
-    &__slider {
-      font-family: manrope-medium;
-      font-size: 16px;
-      line-height: 24px;
-      color: #757095;
-    }
+  &-container__slider {
+    font-family: manrope-medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: #757095;
   }
 
   &-container--right {

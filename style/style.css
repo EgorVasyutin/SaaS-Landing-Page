@@ -609,21 +609,21 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.testimonials-container--left--blue {
+.testimonials-container--blue {
   font-family: staatliches;
   font-size: 18px;
   line-height: 30px;
   color: #3734a9;
   padding-bottom: 15px;
 }
-.testimonials-container--left--bold {
+.testimonials-container--bold {
   font-family: manrope-Extra-bold;
   font-size: 40px;
   line-height: 48px;
   color: #000000;
   padding-bottom: 40px;
 }
-.testimonials-container--left__slider {
+.testimonials-container__slider {
   font-family: manrope-medium;
   font-size: 16px;
   line-height: 24px;
