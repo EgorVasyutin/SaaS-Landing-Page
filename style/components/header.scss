@@ -1,147 +1,24 @@
+@import "../vars";
+
 .header {
-  height: 120px;
-
-  &__select {
-    display: flex;
-    align-items: center;
-    margin-right: 0px;
-    width: 100%;
-  }
-}
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0px 120px;
-  height: 100%;
-
-  &__logo {
-  }
-
-  &__button {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    align-items: center;
-  }
-  &__register {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  padding: 34px 120px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
 }
 
-.logo__text {
+.logo {
   font-family: staatliches;
   font-size: 20px;
   line-height: 24px;
 }
-.nav {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
 
-  &__select {
-    margin-right: 12px;
+@import "menu-burger";
+
+@media screen and (max-width: $resolution-laptop - 0.01px) {
+  .header {
+    padding: 34px;
+    background-color: #fff;
   }
-
-  &__select2 {
-    width: 65%;
-  }
-
-  &__select1 {
-    width: 55%;
-  }
-
-  &__select,
-  &__button {
-    font-family: manrope-semibold;
-    border: none;
-    font-size: 14px;
-    line-height: 19px;
-    cursor: pointer;
-    background: none;
-    appearance: none;
-  }
-}
-
-.arrow_header {
-  margin-left: 0px;
-}
-
-.button__text--semibold {
-  font-family: manrope-semibold;
-  font-size: 14px;
-  line-height: 19px;
-}
-.button__start-free {
-  width: 137px;
-  height: 52px;
-  background-color: #4f46ba;
-  border-radius: 10px;
-  border: none;
-  font-size: 14px;
-  line-height: 19px;
-  color: white;
-  cursor: pointer;
-  font-family: manrope-semibold;
-}
-
-.header__content {
-  padding-top: 130px;
-}
-
-.register__text--big h1 {
-  font-family: manrope-Extra-bold;
-  font-size: 60px;
-  line-height: 74px;
-  color: #000000;
-  letter-spacing: -0.03em;
-}
-
-.register__text--small {
-  font-family: manrope-medium;
-  font-size: 20px;
-  line-height: 30px;
-  color: #64607d;
-  padding-top: 20px;
-}
-
-.input__our-process {
-  padding-top: 47px;
-  display: flex;
-  gap: 50px;
-  align-items: center;
-}
-
-.button__our-process {
-  width: 162px;
-  height: 60px;
-  font-family: manrope-semibold;
-  font-size: 16px;
-  line-height: 30px;
-  border-radius: 47px;
-  background-color: #3734a9;
-  color: white;
-  cursor: pointer;
-}
-
-.elipse-button-play {
-  width: 60px;
-  height: 60px;
-  border-radius: 47px;
-  background-color: #22d497;
-  cursor: pointer;
-  position: relative;
-}
-
-.button-play {
-  position: absolute;
-  top: 35%;
-  left: 40%;
-}
-
-.input-play {
-  display: flex;
-  align-items: center;
 }

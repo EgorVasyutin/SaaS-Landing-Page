@@ -1,0 +1,207 @@
+@import "../vars";
+
+.menu-burger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__button {
+    display: none;
+    align-items: center;
+    width: $cross-size;
+    height: $cross-size;
+    cursor: pointer;
+    z-index: 1;
+
+    & > span,
+    & > span::before,
+    & > span::after {
+      display: block;
+      position: absolute;
+      width: $cross-size;
+      height: 4px;
+      background-color: #616161;
+    }
+
+    & > span::before {
+      content: "";
+      top: -($cross-size / 2 - 2px);
+    }
+
+    & > span::after {
+      content: "";
+      top: ($cross-size / 2 - 2px);
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  &__select {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+  }
+
+  &__select select {
+    margin-right: 12px;
+    text-indent: 0px;
+    display: flex;
+  }
+
+  &__select select,
+  &__link {
+    font-family: manrope-semibold;
+    border: none;
+    font-size: 14px;
+    line-height: 19px;
+    cursor: pointer;
+    background: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+}
+
+.arrow_header {
+  margin-left: 0px;
+}
+
+.sing-in {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  &__text {
+    font-family: manrope-semibold;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  &__button {
+    //width: 137px;
+    //height: 52px;
+    background-color: #4f46ba;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+    cursor: pointer;
+    font-family: manrope-semibold;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 16px 36px;
+  }
+}
+
+.header__content {
+  padding-top: 130px;
+}
+
+.register__text--big h1 {
+  font-family: manrope-Extra-bold;
+  font-size: 60px;
+  line-height: 74px;
+  color: #000000;
+  letter-spacing: -0.03em;
+}
+
+.register__text--small {
+  font-family: manrope-medium;
+  font-size: 20px;
+  line-height: 30px;
+  color: #64607d;
+  padding-top: 20px;
+}
+
+.input__our-process {
+  padding-top: 47px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.button__our-process {
+  width: 162px;
+  height: 60px;
+  font-family: manrope-semibold;
+  font-size: 16px;
+  line-height: 30px;
+  border-radius: 47px;
+  background-color: #3734a9;
+  color: white;
+  cursor: pointer;
+}
+
+.elipse-button-play {
+  width: 60px;
+  height: 60px;
+  border-radius: 47px;
+  background-color: #22d497;
+  cursor: pointer;
+  position: relative;
+}
+
+.button-play {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+}
+
+.input-play {
+  display: flex;
+  align-items: center;
+}
+
+// 1. сверстать меню для desktop +
+// 2. сверстать  для мобилки
+// 3. свертать бургер
+// 4. переход из бургера в крестик
+// 5. переход от стилей desktop к мобилке
+
+@media screen and (max-width: $resolution-laptop - 0.01px) {
+  .menu,
+  .sing-in {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu-burger {
+
+    &__button {
+      display: flex;
+
+    }
+    &__checkbox {
+      // Рисуем крестик из бургера
+      &:checked ~ .menu-burger__button > span {
+        transform: rotate(45deg);
+      }
+
+      &:checked ~ .menu-burger__button > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+
+      &:checked ~ .menu-burger__button > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+
+      &:checked ~ .menu,
+      &:checked ~ .sing-in {
+        display: flex;
+      }
+    }
+  }
+}

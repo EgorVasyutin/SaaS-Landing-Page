@@ -33,55 +33,68 @@
 }
 
 .header {
-  height: 120px;
-}
-.header__select {
-  display: flex;
-  align-items: center;
-  margin-right: 0px;
-  width: 100%;
+  padding: 34px 120px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0px 120px;
-  height: 100%;
-}
-.container__button {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-  align-items: center;
-}
-.container__register {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo__text {
+.logo {
   font-family: staatliches;
   font-size: 20px;
   line-height: 24px;
 }
 
-.nav {
+.menu-burger {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.menu-burger__button {
+  display: none;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu-burger__button > span, .menu-burger__button > span::before, .menu-burger__button > span::after {
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  background-color: #616161;
+}
+.menu-burger__button > span::before {
+  content: "";
+  top: -10px;
+}
+.menu-burger__button > span::after {
+  content: "";
+  top: 10px;
+}
+.menu-burger__checkbox {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 40px;
 }
-.nav__select {
+.menu__select {
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+}
+.menu__select select {
   margin-right: 12px;
+  text-indent: 0px;
+  display: flex;
 }
-.nav__select2 {
-  width: 65%;
-}
-.nav__select1 {
-  width: 55%;
-}
-.nav__select, .nav__button {
+.menu__select select, .menu__link {
   font-family: manrope-semibold;
   border: none;
   font-size: 14px;
@@ -89,29 +102,37 @@
   cursor: pointer;
   background: none;
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .arrow_header {
   margin-left: 0px;
 }
 
-.button__text--semibold {
+.sing-in {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.sing-in__text {
   font-family: manrope-semibold;
   font-size: 14px;
   line-height: 19px;
 }
-
-.button__start-free {
-  width: 137px;
-  height: 52px;
+.sing-in__button {
   background-color: #4f46ba;
   border-radius: 10px;
   border: none;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
   color: white;
   cursor: pointer;
   font-family: manrope-semibold;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 16px 36px;
 }
 
 .header__content {
@@ -173,6 +194,37 @@
   align-items: center;
 }
 
+@media screen and (max-width: 1023.99px) {
+  .menu,
+.sing-in {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu-burger__button {
+    display: flex;
+  }
+  .menu-burger__checkbox:checked ~ .menu-burger__button > span {
+    transform: rotate(45deg);
+  }
+  .menu-burger__checkbox:checked ~ .menu-burger__button > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  .menu-burger__checkbox:checked ~ .menu-burger__button > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .menu-burger__checkbox:checked ~ .menu, .menu-burger__checkbox:checked ~ .sing-in {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1023.99px) {
+  .header {
+    padding: 34px;
+    background-color: #fff;
+  }
+}
 .button__span-text {
   font-family: manrope-semibold;
   font-size: 17px;
@@ -187,7 +239,8 @@
   gap: 25px;
 }
 
-.header__content {
+.first-section {
+  padding-top: 130px;
   position: relative;
 }
 
@@ -278,6 +331,61 @@
   color: white;
   cursor: pointer;
   font-family: manrope-medium;
+}
+
+.register__text--big h1 {
+  font-family: manrope-Extra-bold;
+  font-size: 60px;
+  line-height: 74px;
+  color: #000000;
+  letter-spacing: -0.03em;
+}
+
+.register__text--small {
+  font-family: manrope-medium;
+  font-size: 20px;
+  line-height: 30px;
+  color: #64607d;
+  padding-top: 20px;
+}
+
+.input__our-process {
+  padding-top: 47px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.button__our-process {
+  width: 162px;
+  height: 60px;
+  font-family: manrope-semibold;
+  font-size: 16px;
+  line-height: 30px;
+  border-radius: 47px;
+  background-color: #3734a9;
+  color: white;
+  cursor: pointer;
+}
+
+.elipse-button-play {
+  width: 60px;
+  height: 60px;
+  border-radius: 47px;
+  background-color: #22d497;
+  cursor: pointer;
+  position: relative;
+}
+
+.button-play {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+}
+
+.input-play {
+  display: flex;
+  align-items: center;
 }
 
 .content {
