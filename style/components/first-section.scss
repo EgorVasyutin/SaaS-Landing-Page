@@ -1,165 +1,476 @@
-.button__span-text{
-    font-family: manrope-semibold;
-    font-size: 17px;
-    line-height: 30px;
-    color: #3734A9;
-   margin-left: 11px;
+@import "../vars";
+
+.button__span-text {
+  font-family: manrope-semibold;
+  font-size: 17px;
+  line-height: 30px;
+  color: #3734a9;
+  margin-left: 11px;
 }
 
-.register__input{
+.register__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .register__input {
     display: flex;
     flex-direction: column;
     gap: 25px;
+
+    &-text {
+      font-family: manrope-bold;
+      font-size: 24px;
+      line-height: 30px;
+      color: #3734a9;
+    }
+  }
+
+  .register__text {
+    &--big h1 {
+      font-family: manrope-Extra-bold;
+      font-size: 60px;
+      line-height: 74px;
+      color: #000000;
+      letter-spacing: -0.03em;
+    }
+    &--small {
+      font-family: manrope-medium;
+      font-size: 20px;
+      line-height: 30px;
+      color: #64607d;
+      padding-top: 20px;
+    }
+  }
 }
 
 .first-section {
-    padding-top: 130px;
-    position: relative;
+  padding-top: 210px;
+  position: relative;
 }
 
-.register__input-text{
-    font-family: manrope-bold;
-    font-size: 24px;
-    line-height: 30px;
-    color: #3734A9;
-}
-
-.input-email,
-.input-password{
+.input {
+  &-email,
+  &-password {
     width: 356px;
     height: 60px;
     border-radius: 5px;
-    background: #FFFFFF;
-    border: 1px solid #DFE4F1;
+    background: #ffffff;
+    border: 1px solid #dfe4f1;
     padding-left: 21px;
     font-size: 20px;
     line-height: 30px;
     font-family: manrope-medium;
-    color: #64607D;
-}
-
-.button-submit{
+    color: #64607d;
+  }
+  &-email,
+  &-password {
+    width: 356px;
     height: 60px;
-    background: #FF7F5C;
     border-radius: 5px;
-    font-family: manrope-bold;
-    font-size: 16px;
+    background: #ffffff;
+    border: 1px solid #dfe4f1;
+    padding-left: 21px;
+    font-size: 20px;
     line-height: 30px;
-    color: white;
-    margin-top: 15px;
-    cursor: pointer;
-
-}
-
-.business__logo{
+    font-family: manrope-medium;
+    color: #64607d;
+  }
+  &-play {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 36px;
-    margin-top: 120px;
-}
+  }
 
-.business__text{
-    font-family: manrope-bold;
-    font-size: 22px;
-    line-height: 30px;
-}
-
-.business__logos{
+  &__our-process {
+    padding-top: 47px;
     display: flex;
     gap: 50px;
-}
-
-.content_2{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 108px;
+  }
 }
 
-.content_2__text--bold{
+.button-submit {
+  height: 60px;
+  background: #ff7f5c;
+  border-radius: 5px;
+  font-family: manrope-bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: white;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.business__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  margin-top: 120px;
+}
+
+.business__text {
+  font-family: manrope-bold;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.business__logos {
+  display: flex;
+  gap: 50px;
+}
+
+.content_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 108px;
+
+  &__text--bold {
     font-family: manrope-bold;
     font-size: 42px;
     line-height: 60px;
     color: black;
     padding-bottom: 13px;
     letter-spacing: -0.03em;
-}
+  }
 
-.content_2__text--medium{
+  &__text--medium {
     font-family: manrope-medium;
     font-size: 20px;
     line-height: 30px;
-    color: #64607D;
+    color: #64607d;
     padding-bottom: 25px;
-}
+  }
 
-.content_2__button button{
+  &__button button {
     width: 550px;
     height: 48px;
     border-radius: 10px;
-    background-color: #3734A9;
+    background-color: #3734a9;
     font-size: 17px;
     line-height: 30px;
     text-align: center;
     color: white;
     cursor: pointer;
     font-family: manrope-medium;
-}
-
-.register__text--big h1 {
-    font-family: manrope-Extra-bold;
-    font-size: 60px;
-    line-height: 74px;
-    color: #000000;
-    letter-spacing: -0.03em;
-}
-
-.register__text--small {
-    font-family: manrope-medium;
-    font-size: 20px;
-    line-height: 30px;
-    color: #64607d;
-    padding-top: 20px;
-}
-
-.input__our-process {
-    padding-top: 47px;
-    display: flex;
-    gap: 50px;
-    align-items: center;
+  }
 }
 
 .button__our-process {
-    width: 162px;
-    height: 60px;
-    font-family: manrope-semibold;
-    font-size: 16px;
-    line-height: 30px;
-    border-radius: 47px;
-    background-color: #3734a9;
-    color: white;
-    cursor: pointer;
+  width: 162px;
+  height: 60px;
+  font-family: manrope-semibold;
+  font-size: 16px;
+  line-height: 30px;
+  border-radius: 47px;
+  background-color: #3734a9;
+  color: white;
+  cursor: pointer;
 }
 
 .elipse-button-play {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 47px;
+  background-color: #22d497;
+  cursor: pointer;
+  position: relative;
+}
+
+.button-play {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+}
+
+@media screen and (max-width: $resolution-lapton-l) {
+  .first-section {
+    padding: 150px 30px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: $resolution-laptop) {
+  .register__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .register__input {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      &-text {
+        font-family: manrope-bold;
+        font-size: 17px;
+        line-height: 15px;
+        color: #3734a9;
+      }
+    }
+
+    .register__text {
+      &--big h1 {
+        font-family: manrope-Extra-bold;
+        font-size: 40px;
+        line-height: 50px;
+        color: #000000;
+        letter-spacing: -0.03em;
+      }
+      &--small {
+        font-family: manrope-medium;
+        font-size: 15px;
+        line-height: 20px;
+        color: #64607d;
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .first-section {
+    padding-top: 150px;
+    position: relative;
+  }
+
+  .input {
+    &-email,
+    &-password {
+      width: 330px;
+      height: 50px;
+      border-radius: 5px;
+      background: #ffffff;
+      border: 1px solid #dfe4f1;
+      padding-left: 15px;
+      font-size: 16px;
+      line-height: 30px;
+      font-family: manrope-medium;
+      color: #64607d;
+    }
+    &-email,
+    &-password {
+      width: 330px;
+      height: 50px;
+      border-radius: 5px;
+      background: #ffffff;
+      border: 1px solid #dfe4f1;
+      padding-left: 15px;
+      font-size: 16px;
+      line-height: 30px;
+      font-family: manrope-medium;
+      color: #64607d;
+    }
+    &-play {
+      display: flex;
+      align-items: center;
+    }
+
+    &__our-process {
+      padding-top: 47px;
+      display: flex;
+      gap: 50px;
+      align-items: center;
+    }
+  }
+  .elipse-button-play {
+    width: 50px;
+    height: 50px;
     border-radius: 47px;
     background-color: #22d497;
     cursor: pointer;
     position: relative;
-}
+  }
 
-.button-play {
+  .button-play {
     position: absolute;
     top: 35%;
     left: 40%;
+    width: 15px;
+  }
+
+  .button__our-process {
+    width: 130px;
+    height: 50px;
+    font-family: manrope-semibold;
+    font-size: 13px;
+    line-height: 20px;
+    border-radius: 47px;
+    background-color: #3734a9;
+    color: white;
+    cursor: pointer;
+  }
+  .button__span-text {
+    font-size: 15px;
+  }
 }
 
-.input-play {
-    display: flex;
-    align-items: center;
+@media screen and (max-width: $resolution-tablet) {
+  .register__container {
+    .register__input {
+      gap: 7px;
+
+      &-text {
+        font-family: manrope-semibold;
+        font-size: 12px;
+        line-height: 15px;
+        color: #3734a9;
+      }
+    }
+
+    .register__text {
+      &--big h1 {
+        font-family: manrope-Extra-bold;
+        font-size: 30px;
+        line-height: 40px;
+        color: #000000;
+        letter-spacing: -0.03em;
+      }
+      &--small {
+        font-family: manrope-medium;
+        font-size: 12px;
+        line-height: 15px;
+        color: #64607d;
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .first-section {
+    padding: 110px 20px;
+    position: relative;
+  }
+
+  .button-submit {
+    height: 30px;
+    background: #ff7f5c;
+    border-radius: 3px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .input {
+    &-email,
+    &-password {
+      width: 256px;
+      height: 30px;
+      border-radius: 3px;
+      background: #ffffff;
+      border: 1px solid #dfe4f1;
+      padding-left: 10px;
+      font-size: 13px;
+      line-height: 15px;
+    }
+    &-email,
+    &-password {
+      width: 256px;
+      height: 30px;
+      border-radius: 3px;
+      background: #ffffff;
+      border: 1px solid #dfe4f1;
+      padding-left: 10px;
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+  .button-play {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    width: 12px;
+  }
+
+  .elipse-button-play {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button__our-process {
+    width: 100px;
+    height: 40px;
+    font-family: manrope-semibold;
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .button__span-text {
+    font-size: 12px;
+  }
 }
 
+@media screen and (max-width: $resolution-mobaile-l) {
+  .first-section {
+    padding: 110px 15px;
+    position: relative;
+  }
 
+  .register__container {
+    flex-wrap: wrap;
+  }
+  .register__input {
+    padding-top: 20px;
+  }
+  .elipse-button-play {
+    display: none;
+  }
+
+  .button__our-process {
+    display: none;
+  }
+  .button__span-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $resolution-mobaile-s) {
+  .input {
+    &-email,
+    &-password {
+      width: 236px;
+      height: 325px;
+      border-radius: 3px;
+      background: #ffffff;
+      border: 1px solid #dfe4f1;
+      padding-left: 10px;
+      font-size: 10px;
+    }
+
+    &-email,
+    &-password {
+      width: 236px;
+      height: 25px;
+      border-radius: 3px;
+      background: #ffffff;
+      border: 1px solid #dfe4f1;
+      padding-left: 10px;
+      font-size: 10px;
+      line-height: 15px;
+      font-family: manrope-medium;
+      color: #64607d;
+    }
+  }
+  .register__container {
+    .register__input {
+      &-text {
+        font-family: manrope-semibold;
+        font-size: 10px;
+        line-height: 15px;
+      }
+    }
+
+    .register__text {
+      &--big h1 {
+        font-family: manrope-Extra-bold;
+        font-size: 25px;
+      }
+      &--small {
+        font-family: manrope-medium;
+        font-size: 10px;
+        line-height: 15px;
+        color: #64607d;
+        padding-top: 20px;
+      }
+    }
+  }
+  .register__input-text {
+    font-size: 10px;
+  }
+}

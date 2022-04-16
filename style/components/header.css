@@ -72,7 +72,7 @@
 .button__start-free {
   width: 137px;
   height: 52px;
-  background-color: #4F46BA;
+  background-color: #4f46ba;
   border-radius: 10px;
   border: none;
   font-size: 14px;
@@ -104,7 +104,7 @@
   font-family: manrope-medium;
   font-size: 20px;
   line-height: 30px;
-  color: #64607D;
+  color: #64607d;
   padding-top: 20px;
 }
 
@@ -122,7 +122,7 @@
   font-size: 16px;
   line-height: 30px;
   border-radius: 47px;
-  background-color: #3734A9;
+  background-color: #3734a9;
   color: white;
   cursor: pointer;
 }
@@ -131,7 +131,7 @@
   width: 60px;
   height: 60px;
   border-radius: 47px;
-  background-color: #22D497;
+  background-color: #22d497;
   cursor: pointer;
   position: relative;
 }
