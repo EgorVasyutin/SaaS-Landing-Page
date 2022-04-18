@@ -34,10 +34,11 @@
 
 .header {
   padding: 34px 120px;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
+  z-index: 1;
 }
 
 .logo {
@@ -52,12 +53,15 @@
   align-items: center;
 }
 .menu-burger__button {
+  position: fixed;
+  top: 34px;
+  right: 34px;
   display: none;
   align-items: center;
   width: 24px;
   height: 24px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 .menu-burger__button > span, .menu-burger__button > span::before, .menu-burger__button > span::after {
   display: block;
@@ -90,7 +94,6 @@
   margin-right: 0px;
 }
 .menu__select select {
-  margin-right: 12px;
   text-indent: 0px;
   display: flex;
 }
@@ -105,9 +108,24 @@
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+.menu__label-select-1 {
+  position: relative;
+  width: 80px;
+}
+.menu__label-select-2 {
+  position: relative;
+  width: 87px;
+}
+.menu__select select {
+  width: 100%;
+}
 
 .arrow_header {
   margin-left: 0px;
+  position: absolute;
+  top: 6px;
+  right: 1.5px;
+  z-index: -1;
 }
 
 .sing-in {
@@ -215,8 +233,25 @@
     top: 0;
     transform: rotate(90deg);
   }
-  .menu-burger__checkbox:checked ~ .menu, .menu-burger__checkbox:checked ~ .sing-in {
+  .menu-burger__checkbox:checked ~ .header {
+    bottom: 0px;
+  }
+  .menu-burger__checkbox:checked ~ .header .menu-burger {
+    flex-direction: column;
+    height: 100%;
+  }
+  .menu-burger__checkbox:checked ~ .header .menu, .menu-burger__checkbox:checked ~ .header .sing-in {
     display: flex;
+  }
+  .menu-burger__checkbox:checked ~ .header .menu {
+    align-items: start;
+    width: 80%;
+  }
+  .menu-burger__checkbox:checked ~ .header .sing-in {
+    flex-direction: row;
+  }
+  .menu-burger__checkbox:checked ~ .header .logo {
+    align-self: start;
   }
 }
 @media screen and (max-width: 1023.99px) {
@@ -304,7 +339,7 @@
   align-items: center;
 }
 
-.button-submit {
+.first-section-button-submit {
   height: 60px;
   background: #ff7f5c;
   border-radius: 5px;
@@ -536,7 +571,7 @@
     position: relative;
   }
 
-  .button-submit {
+  .first-section-button-submit {
     height: 30px;
     background: #ff7f5c;
     border-radius: 3px;
@@ -1268,7 +1303,7 @@
   opacity: 0.4;
 }
 
-.button-submit-2 {
+.footer-button-submit-2 {
   margin-bottom: 75px;
   height: 60px;
   background: #ff7f5c;

@@ -6,12 +6,15 @@
   align-items: center;
 
   &__button {
+    position: fixed;
+    top: 34px;
+    right: 34px;
     display: none;
     align-items: center;
     width: $cross-size;
     height: $cross-size;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
 
     & > span,
     & > span::before,
@@ -52,7 +55,6 @@
   }
 
   &__select select {
-    margin-right: 12px;
     text-indent: 0px;
     display: flex;
   }
@@ -69,10 +71,26 @@
     -webkit-appearance: none;
     -moz-appearance: none;
   }
+  &__label-select-1 {
+    position: relative;
+    width: 80px;
+  }
+  &__label-select-2 {
+    position: relative;
+    width: 87px;
+  }
+  &__select select{
+    width: 100%;
+  }
+
 }
 
 .arrow_header {
   margin-left: 0px;
+  position: absolute;
+  top: 6px;
+  right: 1.5px;
+  z-index: -1;
 }
 
 .sing-in {
@@ -196,9 +214,29 @@
         transform: rotate(90deg);
       }
 
-      &:checked ~ .menu,
-      &:checked ~ .sing-in {
+      &:checked ~ .header {
+        bottom: 0px;
+      }
+
+      &:checked ~ .header .menu-burger {
+        flex-direction: column;
+        height: 100%;
+      }
+
+      &:checked ~ .header .menu,
+      &:checked ~ .header .sing-in {
         display: flex;
+      }
+      &:checked ~ .header .menu {
+        align-items: start;
+        width: 80%;
+      }
+
+      &:checked ~ .header .sing-in {
+        flex-direction: row;
+      }
+      &:checked ~ .header .logo {
+        align-self: start;
       }
     }
   }
