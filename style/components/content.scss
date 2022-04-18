@@ -1,6 +1,6 @@
 .content {
   display: flex;
-  padding: 210px 140px;
+  padding: 210px 0px;
   position: relative;
   justify-content: space-between;
 
@@ -348,7 +348,7 @@
 .testimonials {
   display: flex;
   justify-content: space-between;
-  margin: 125px 123px 0px 123px;
+  margin: 125px 0px 125px 0px;
 
   &-container--left {
     display: flex;

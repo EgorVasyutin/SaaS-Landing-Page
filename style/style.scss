@@ -6,31 +6,34 @@
 @import "components/footer.scss";
 @import "components/cta-box.scss";
 
-.body{
-    max-width: 1440px;
-    margin: 0 auto;
+.body {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-body{
-    background-image: url("../../img/Vector_12312.svg");
-    background-repeat: no-repeat;
-    background-position: top right;
+body {
+  background-image: url("../../img/Vector_12312.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 .img-sexangle_2 {
-    position: absolute;
-    top: 650px;
-    left: 0px;
+  position: absolute;
+  top: 650px;
+  left: 0px;
+  z-index: -1;
 }
 
-.img-sexangle_1{
-    position: absolute;
-    top: 80px;
-    left: 0px;
+.img-sexangle_1 {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  z-index: -1;
 }
 
-.img-sexangle_3{
-    position: absolute;
-    top: 2710px;
-    right: 0px;
+.img-sexangle_3 {
+  position: absolute;
+  top: 2710px;
+  right: 0px;
+  z-index: -1;
 }

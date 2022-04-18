@@ -46,10 +46,18 @@
   width: 356px;
   height: 60px;
   border-radius: 5px;
-  background-color: #f2f3f4;
-  border: 1px solid #dfe4f1;
-  opacity: 0.2;
+  background-color: rgba(242, 243, 244, 0.2);
+  //opacity: 0.2;
   padding-left: 21px;
+  outline: none;
+  color: white;
+
+  &:active {
+    border: 1px solid #dfe4f1;
+  }
+  &:focus {
+    border: 1px solid #dfe4f1;
+  }
 }
 
 .input-email-2::placeholder {
@@ -203,14 +211,14 @@
   height: 130px;
   margin-top: 60px;
 
-    &__text {
-        padding-top: 40px;
-        color: #181433;
-        font-family: manrope-medium;
-        font-size: 16px;
-        line-height: 26px;
-        letter-spacing: -0.02em;
-    }
+  &__text {
+    padding-top: 40px;
+    color: #181433;
+    font-family: manrope-medium;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+  }
 }
 
 .line-3 {
@@ -218,4 +226,3 @@
   background-color: #e5e5ea;
   height: 2px;
 }
-

@@ -1,14 +1,22 @@
 @import "../vars";
 
 .header {
-  padding: 34px 120px;
-  position: fixed;
+  padding: 34px 0px;
+  position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
   z-index: 1;
-}
 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container__header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .logo {
   font-family: staatliches;
   font-size: 20px;

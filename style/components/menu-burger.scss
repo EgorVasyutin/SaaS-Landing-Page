@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1440px;
 
   &__button {
     position: fixed;
@@ -79,10 +80,9 @@
     position: relative;
     width: 87px;
   }
-  &__select select{
+  &__select select {
     width: 100%;
   }
-
 }
 
 .arrow_header {

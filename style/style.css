@@ -33,12 +33,21 @@
 }
 
 .header {
-  padding: 34px 120px;
-  position: fixed;
+  padding: 34px 0px;
+  position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
   z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container__header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
@@ -51,6 +60,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1440px;
 }
 .menu-burger__button {
   position: fixed;
@@ -696,7 +706,7 @@
 }
 .content {
   display: flex;
-  padding: 210px 140px;
+  padding: 210px 0px;
   position: relative;
   justify-content: space-between;
 }
@@ -1016,7 +1026,7 @@
 .testimonials {
   display: flex;
   justify-content: space-between;
-  margin: 125px 123px 0px 123px;
+  margin: 125px 0px 125px 0px;
 }
 .testimonials-container--left {
   display: flex;
@@ -1279,10 +1289,18 @@
   width: 356px;
   height: 60px;
   border-radius: 5px;
-  background-color: #f2f3f4;
-  border: 1px solid #dfe4f1;
-  opacity: 0.2;
+  background-color: rgba(242, 243, 244, 0.2);
   padding-left: 21px;
+  outline: none;
+  color: white;
+}
+.input-password-2:active,
+.input-email-2:active {
+  border: 1px solid #dfe4f1;
+}
+.input-password-2:focus,
+.input-email-2:focus {
+  border: 1px solid #dfe4f1;
 }
 
 .input-email-2::placeholder {
@@ -1533,7 +1551,7 @@
 }
 
 .body {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -1547,18 +1565,21 @@ body {
   position: absolute;
   top: 650px;
   left: 0px;
+  z-index: -1;
 }
 
 .img-sexangle_1 {
   position: absolute;
   top: 80px;
   left: 0px;
+  z-index: -1;
 }
 
 .img-sexangle_3 {
   position: absolute;
   top: 2710px;
   right: 0px;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */
