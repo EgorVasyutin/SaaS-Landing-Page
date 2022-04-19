@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1440px;
+  width: 1200px;
 
   &__button {
     position: fixed;
@@ -239,5 +239,10 @@
         align-self: start;
       }
     }
+  }
+}
+@media screen and (max-width: 1230px) {
+  .menu-burger {
+    padding: 0px 30px;
   }
 }

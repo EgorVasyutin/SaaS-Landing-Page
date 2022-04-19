@@ -60,7 +60,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1440px;
+  width: 1200px;
 }
 .menu-burger__button {
   position: fixed;
@@ -262,6 +262,11 @@
   }
   .menu-burger__checkbox:checked ~ .header .logo {
     align-self: start;
+  }
+}
+@media screen and (max-width: 1230px) {
+  .menu-burger {
+    padding: 0px 30px;
   }
 }
 @media screen and (max-width: 1023.99px) {
@@ -1553,6 +1558,7 @@
 .body {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 body {
